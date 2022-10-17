@@ -62,7 +62,6 @@ goto end
 start /d "C:\WINDOWS\system32" Taskmgr.exe
 echo "Finished..."
 goto end
-:end
 :dnsflush
 cmd /c "ipconfig /flushdns"
 cmd /c "ipconfig /renew"
