@@ -14,6 +14,8 @@ Media:
 
 The implementation was started by adding a start menu for the program for getting the user to select what option to proceed with by typing a number from [1-10] (more to be added and restructured in the future). Then the variable 'choicevar' was created to save the number selected.
 
-This variable along with a goto command is used to skip to the beginning of the 
+This variable along with the EQU (to check for equivalency) and a goto command is used to skip to the lines of the project nessessary for your choice instead of doing everything at once with no user input.
+
+If an invalid option is typed, the program prompts the user to select another option and restarts.
 
 Demonstration:
