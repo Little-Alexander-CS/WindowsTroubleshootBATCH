@@ -34,8 +34,11 @@ These options open useful Windows troubleshooting applications (Disk Cleanup, De
 
 ![dns](https://user-images.githubusercontent.com/77220782/197309919-34cb3e6c-0ccc-42b4-97f1-4272905d9da1.jpg)
 
-
+The first option flushes, renews and displays dns information.
+the second option pings the loopback address and then a cloudflare dns server on the internet to check for connectivity problems. 
 
 ![end](https://user-images.githubusercontent.com/77220782/197309925-53154448-e14f-45b4-bde2-ca9b4994dd59.jpg)
+
+All options jump to this end text which asks the user to press 1 to return to the start or anything else to end the program.
 
 Demonstration:
