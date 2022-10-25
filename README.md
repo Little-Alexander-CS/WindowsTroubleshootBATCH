@@ -35,7 +35,8 @@ These options open useful Windows troubleshooting applications (Disk Cleanup, De
 ![dns](https://user-images.githubusercontent.com/77220782/197309919-34cb3e6c-0ccc-42b4-97f1-4272905d9da1.jpg)
 
 The first option flushes, renews, and displays DNS information.
-The second option pings the loopback address and then a Cloudflare DNS server on the internet to check for connectivity problems. 
+The second option pings the loopback address and then a Cloudflare DNS server on the internet to check for connectivity problems.
+It also displays the ipconfig /all command which can be used to check for invalid ip addresses and other issues.
 
 ![end](https://user-images.githubusercontent.com/77220782/197309925-53154448-e14f-45b4-bde2-ca9b4994dd59.jpg)
 
