@@ -2,7 +2,7 @@
 
 Project Title:
 
-Windows 10/11 Troubleshooting shortcut file
+Windows 10/11 Troubleshooting Batch File
 
 Project Summary:
 
