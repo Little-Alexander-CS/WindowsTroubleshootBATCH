@@ -6,7 +6,7 @@ Windows 10/11 Troubleshooting Batch File
 
 Project Summary:
 
-Created a windows batch file on Visual Studio Code that runs windows DISM and SFC corruption restoring commands along with other shortcuts to open typical troubleshooting applications for convenience. (Task Manager, Disk Part, Performance Monitor, etc.). It is a batch script that utilizes Windows 10/11 or Windows Server. This project could be used within Azure Virtual Machines but was demonstrated on my main PC.
+Created a windows batch file on Visual Studio Code that runs windows DISM and SFC corruption restoring commands along with other shortcuts to open typical troubleshooting applications for convenience. (Task Manager, Disk Part, Performance Monitor, etc.). It is a batch script that can be used on Windows 10/11 or Windows Server. This project could be used within Azure Virtual Machines but was demonstrated on my main PC.
 
 Media:
 
