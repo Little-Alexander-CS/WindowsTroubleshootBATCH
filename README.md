@@ -42,3 +42,15 @@ the second option pings the loopback address and then a cloudflare dns server on
 All options jump to this end text which asks the user to press 1 to return to the start or anything else to end the program.
 
 Demonstration:
+
+![Imp1](https://user-images.githubusercontent.com/77220782/197838557-0a09f084-7a20-4edb-a30c-4c346efee915.png)
+
+Once you run the batch file (as an administrator!) the main options menu appears asking you to select an option to proceed.
+
+![Imp2](https://user-images.githubusercontent.com/77220782/197838572-caf9eb3c-ee55-423a-8b31-dad07d316507.png)
+
+Once a proper option is selected it runs and then asks if you'd like to run another option or exit the program by pressing anything other than '1'.
+
+![Imp3](https://user-images.githubusercontent.com/77220782/197838587-96e3a622-c640-4cc6-9646-79af9bee7b07.png)
+
+If one is not pressed the program ends.
