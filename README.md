@@ -30,7 +30,7 @@ The difference between DISM and SFC is that DISM restores problems with the syst
 
 ![OpenProg](https://user-images.githubusercontent.com/77220782/197309863-7a0c90ea-2be0-4218-9303-0830d2cbf29a.jpg)
 
-These options open useful Windows troubleshooting applications (Disk Cleanup, Defragment and Optimize Drives, Performance Monitor, and Task Manager, respectively)
+These options open useful Windows troubleshooting applications (Disk Cleanup, Defragment and Optimize Drives, Performance Monitor, and Task Manager, respectively).
 
 ![dns](https://user-images.githubusercontent.com/77220782/197309919-34cb3e6c-0ccc-42b4-97f1-4272905d9da1.jpg)
 
