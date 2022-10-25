@@ -50,7 +50,7 @@ Once you run the batch file (as an administrator!), the main options menu appear
 
 ![Imp2](https://user-images.githubusercontent.com/77220782/197838572-caf9eb3c-ee55-423a-8b31-dad07d316507.png)
 
-Once a proper option is selected, it runs and then asks if you'd like to run another option or exit the program by pressing anything other than '1'.
+Once a proper option is selected [1-10 (no spaces)], it runs and then asks if you'd like to run another option or exit the program by pressing anything other than '1'.
 
 ![Imp3](https://user-images.githubusercontent.com/77220782/197838587-96e3a622-c640-4cc6-9646-79af9bee7b07.png)
 
