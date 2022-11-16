@@ -79,10 +79,14 @@ cmd /c "ping 1.1.1.1"
 cmd /c "ipconfig /all"
 goto end
 :update
+echo "Checking for updates..."
 Powershell.exe winget upgrade
+echo "Finished..."
 set /p startOverPS="Would you like to proceed with these updates? [N - NO, YES - Y / OTHER]: "
 IF /i %startOverPS% EQU N goto start
-Powershell.exe winget upgrade
+echo "Installing updates..."
+Powershell.exe winget upgrade --all
+echo "Finished..."
 goto end
 :end
 set /p startOver="Would you like to run another command? [1 - YES, OTHER - NO]: "
