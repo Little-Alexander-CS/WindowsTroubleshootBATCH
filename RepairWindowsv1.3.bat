@@ -91,6 +91,5 @@ goto end
 :end
 set /p startOver="Would you like to run another command? [1 - YES, OTHER - NO]: "
 IF /i %startOver% EQU 1 goto start
-
 echo "Finished...!"
 timeout -1 /nobreak
