@@ -12,6 +12,7 @@ echo "[7] - Resource Monitor"
 echo "[8] - Task Manager"
 echo "[9] - DNS Flush/Renew"
 echo "[10] - Ping loopback IP / 1.1.1.1"
+echo "[11] - Winget Update Service"
 set /p choicevar="Enter your choice: "
 
 if %choicevar% EQU 1 goto restorebasic
@@ -24,6 +25,7 @@ if %choicevar% EQU 7 goto resourcemonitor
 if %choicevar% EQU 8 goto taskmgr
 if %choicevar% EQU 9 goto dnsflush
 if %choicevar% EQU 10 goto pingip
+if %choicevar% EQU 11 goto update
 
 echo "Invalid Option, please try again"
 goto start 
@@ -75,6 +77,12 @@ goto end
 cmd /c "ping 127.0.0.1"
 cmd /c "ping 1.1.1.1"
 cmd /c "ipconfig /all"
+goto end
+:update
+Powershell.exe winget upgrade
+set /p startOverPS="Would you like to proceed with these updates? [N - NO, YES - Y / OTHER]: "
+IF /i %startOverPS% EQU N goto start
+Powershell.exe winget upgrade
 goto end
 :end
 set /p startOver="Would you like to run another command? [1 - YES, OTHER - NO]: "
