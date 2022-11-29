@@ -80,12 +80,12 @@ cmd /c "ipconfig /all"
 goto end
 :update
 echo "Checking for updates..."
-cmd winget upgrade --include-unknown
+cmd /c winget upgrade --include-unknown
 echo "Finished..."
 set /p startOverPS="Would you like to proceed with these updates? [N - NO, YES - Y / OTHER]: "
 IF /i %startOverPS% EQU N goto start
 echo "Installing updates..."
-cmd winget upgrade --all --include-unknown
+cmd /c winget upgrade --all --include-unknown
 echo "Finished..."
 goto end
 :end
