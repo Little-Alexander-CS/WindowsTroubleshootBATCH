@@ -57,9 +57,9 @@ echo     [11] Winget Update Service
 echo     [12] Reset TCP/IP Stack
 echo     [13] Check Disk for Errors (CHKDSK)
 echo     [14] Check for Windows Updates
-echo     [15] Open Event Viewer
-echo     [16] Open Device Manager
-echo     [17] Create a System Restore Point
+echo     [15] Event Viewer
+echo     [16] Device Manager
+echo     [17] System Restore Point
 echo     [Q] Quit
 echo.
 
