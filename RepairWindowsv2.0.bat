@@ -5,7 +5,7 @@ mode 180, 60
 :start
 cls
 echo.
-echo         Starting Windows 10/11 Troubleshooting Batch File by Alexander Little...
+echo Starting Windows 10/11 Troubleshooting Batch File by Alexander Little...
 echo ===================================================================
 echo.
 echo                                            .oodMMMM
