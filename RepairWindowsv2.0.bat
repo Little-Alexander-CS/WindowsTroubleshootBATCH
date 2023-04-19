@@ -2,6 +2,21 @@
 color 1F
 title Windows Recovery Batch File by Alexander Little
 mode 180, 60
+:: Run as administrator
+:: https://stackoverflow.com/a/12264592/124258
+goto check_Permissions
+:check_Permissions
+    echo Administrative permissions required. Detecting permissions...
+    net session >nul 2>&1
+    if %errorLevel% == 0 (
+        echo Success: Administrative permissions confirmed.
+        pause
+    ) else (
+        echo Failure: Current permissions inadequate.
+        pause
+        exit
+    )
+goto start
 :start
 cls
 echo.
@@ -232,4 +247,3 @@ if %process_count% GTR 0 (
 
 :quit
 exit
-
