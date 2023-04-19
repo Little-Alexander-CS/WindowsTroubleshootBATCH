@@ -16,6 +16,25 @@ goto check_Permissions
         pause
         exit
     )
+echo.
+echo                                            .oodMMMM
+echo                                   .oodMMMMMMMMMMMMM
+echo                       ..oodMMM  MMMMMMMMMMMMMMMMMMM
+echo                 oodMMMMMMMMMMM  MMMMMMMMMMMMMMMMMMM
+echo                 MMMMMMMMMMMMMM  MMMMMMMMMMMMMMMMMMM
+echo                 MMMMMMMMMMMMMM  MMMMMMMMMMMMMMMMMMM
+echo                 MMMMMMMMMMMMMM  MMMMMMMMMMMMMMMMMMM
+echo                 MMMMMMMMMMMMMM  MMMMMMMMMMMMMMMMMMM
+echo                 MMMMMMMMMMMMMM  MMMMMMMMMMMMMMMMMMM
+echo. 
+echo                 MMMMMMMMMMMMMM  MMMMMMMMMMMMMMMMMMM
+echo                 MMMMMMMMMMMMMM  MMMMMMMMMMMMMMMMMMM
+echo                 MMMMMMMMMMMMMM  MMMMMMMMMMMMMMMMMMM
+echo                 MMMMMMMMMMMMMM  MMMMMMMMMMMMMMMMMMM
+echo                 MMMMMMMMMMMMMM  MMMMMMMMMMMMMMMMMMM
+echo                    `^^^^^^MMMMMMM  MMMMMMMMMMMMMMMMMMM
+echo                          ````^^^^  ^^MMMMMMMMMMMMMMMMM
+echo                                         ````^^^^^^MMMM
 goto main_menu
 
 :main_menu
