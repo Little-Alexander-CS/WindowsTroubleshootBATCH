@@ -24,7 +24,6 @@ echo.
 echo Starting Windows 10/11 Troubleshooting Batch File by Alexander Little...
 echo ===================================================================
 echo.
-echo.
 echo                                            .oodMMMM
 echo                                   .oodMMMMMMMMMMMMM
 echo                       ..oodMMM  MMMMMMMMMMMMMMMMMMM
