@@ -16,6 +16,14 @@ goto check_Permissions
         pause
         exit
     )
+goto main_menu
+
+:main_menu
+cls
+echo.
+echo Starting Windows 10/11 Troubleshooting Batch File by Alexander Little...
+echo ===================================================================
+echo.
 echo.
 echo                                            .oodMMMM
 echo                                   .oodMMMMMMMMMMMMM
@@ -35,14 +43,6 @@ echo                 MMMMMMMMMMMMMM  MMMMMMMMMMMMMMMMMMM
 echo                    `^^^^^^MMMMMMM  MMMMMMMMMMMMMMMMMMM
 echo                          ````^^^^  ^^MMMMMMMMMMMMMMMMM
 echo                                         ````^^^^^^MMMM
-goto main_menu
-
-:main_menu
-cls
-echo.
-echo Starting Windows 10/11 Troubleshooting Batch File by Alexander Little...
-echo ===================================================================
-echo.
 echo Choose a category:
 echo.
 echo     [1] Network
