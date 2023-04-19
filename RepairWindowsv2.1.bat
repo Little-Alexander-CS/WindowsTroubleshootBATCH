@@ -2,7 +2,7 @@
 color 1F
 title Windows Recovery Batch File by Alexander Little
 mode 180, 60
-
+:: test
 :: Run as administrator
 :: https://stackoverflow.com/a/12264592/124258
 goto check_Permissions
