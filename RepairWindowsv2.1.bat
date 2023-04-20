@@ -1,6 +1,6 @@
 @echo off
 color 1F
-title Windows Recovery Batch File by Alexander Little
+title Windows 10/11 Troubleshooting Batch File (Alexander Little)
 mode 180, 60
 :: test
 :: Run as administrator
