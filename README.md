@@ -1,5 +1,5 @@
 # WindowsTroubleshootBATCH
-
+(APPLICATION HAS BEEN MODIFIED GREATLY SINCE THESE SCREENSHOTS)
 Project Title:
 
 Windows 10/11 Troubleshooting Batch File
