@@ -191,7 +191,7 @@ goto scanning_menu
 
 :restoreadvanced
 echo "Starting Advanced DISM Scan..."
-cmd /c "DISM.exe /Online /Cleanup-Image /RestoreHealth /Source:C:\RepairSource\Windows"
+cmd /c "DISM.exe /Online /Cleanup-Image /RestoreHealth /Source:C:\RepairSource\Windows /LimitAccess"
 echo "Finished..."
 pause
 goto scanning_menu
