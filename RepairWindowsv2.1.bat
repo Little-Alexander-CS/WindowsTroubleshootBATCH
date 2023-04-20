@@ -1,5 +1,4 @@
 @echo off
-color 1F
 title Windows 10/11 Troubleshooting Batch File (Alexander Little)
 mode 180, 60
 :: test
