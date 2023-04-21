@@ -347,11 +347,20 @@ cls
 echo Displaying ARP cache...
 start cmd.exe /k cmd /c "arp -a"
 echo.
-echo Clearing ARP cache...
-cmd /c arp -d *
-echo ARP cache cleared.
-pause
-goto maintenance_menu
+set /p clear_cache=Do you want to clear the ARP cache? (Y/N): 
+if /i "%clear_cache%"=="Y" (
+    echo Clearing ARP cache...
+    cmd /c arp -d *
+    echo ARP cache cleared.
+) else if /i "%clear_cache%"=="N" (
+    echo Returning to maintenance menu...
+    pause
+    goto maintenance_menu
+) else (
+    echo Invalid input. Please enter either Y or N.
+    pause
+    goto arp_cache
+)
 
  :UACPrompt
    echo Set UAC = CreateObject^("Shell.Application"^) > "%temp%\getadmin.vbs"
