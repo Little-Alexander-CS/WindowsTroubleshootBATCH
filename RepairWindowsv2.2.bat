@@ -272,7 +272,7 @@ goto network_menu
 echo "Checking for updates..."
 cmd /c winget upgrade --include-unknown
 echo "Finished..."
-set /p startOverPS="Would you like to proceed with these updates? [N - NO, YES - Y / OTHER]: "
+set /p startOverPS="Would you like to proceed with these updates? (Y/N): "
 IF /i %startOverPS% EQU N goto maintenance_menu
 echo "Installing updates..."
 cmd /c winget upgrade --all --accept-source-agreements --include-unknown
@@ -301,7 +301,7 @@ echo "Checking for Windows Updates..."
 powershell.exe -NoProfile -Command "& {Set-ExecutionPolicy -Scope Process -ExecutionPolicy Bypass; Install-Module PSWindowsUpdate -Force -Confirm:$False; Get-WindowsUpdate}"
 echo "Finished..."
 pause
-set /p proceedWithUpdates="Would you like to proceed with these updates? [Y - YES, N - NO]: "
+set /p proceedWithUpdates="Would you like to proceed with these updates? (Y/N): "
 IF /i %proceedWithUpdates% EQU N goto maintenance_menu
 echo "Installing Windows Updates..."
 powershell.exe -NoProfile -Command "& {Set-ExecutionPolicy -Scope Process -ExecutionPolicy Bypass; Install-Module PSWindowsUpdate -Force -Confirm:$False; Install-WindowsUpdate -AcceptAll -IgnoreReboot}"
