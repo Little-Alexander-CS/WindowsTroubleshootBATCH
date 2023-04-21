@@ -169,7 +169,7 @@ echo.
 set /p maint_choice="Enter your choice (1-8, B): "
 
 :: Validate user input
-set "valid_choices=1 2 3 4 5 6 7 B"
+set "valid_choices=1 2 3 4 5 6 7 8 B"
 echo %valid_choices%|find "%maint_choice%" >nul || (
     echo Invalid Option, please try again
     pause
