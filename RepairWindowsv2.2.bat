@@ -254,7 +254,9 @@ pause
 goto application_menu
 
 :dnsflush
-start cmd.exe /k cmd ipconfig /flushdns & cmd ipconfig /renew & cmd ipconfig /displaydns
+start cmd.exe /k cmd /c "ipconfig /flushdns"
+start cmd.exe /k cmd /c "ipconfig /renew"
+:: start cmd.exe /k cmd /c "ipconfig /displaydns"
 echo "Finished..."
 pause
 goto network_menu
