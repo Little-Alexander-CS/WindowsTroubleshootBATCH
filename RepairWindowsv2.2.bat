@@ -345,10 +345,10 @@ if %process_count% GTR 0 (
 :arp_cache
 cls
 echo Displaying ARP cache...
-arp -a
+start cmd.exe /k cmd /c "arp -a"
 echo.
 echo Clearing ARP cache...
-arp -d *
+cmd /c arp -d *
 echo ARP cache cleared.
 pause
 goto maintenance_menu
