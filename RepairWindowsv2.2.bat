@@ -1,8 +1,18 @@
 @echo off
 title Windows 10/11 Troubleshooting Batch File (Alexander Little)
-for /f "tokens=2 delims=:." %%a in ('wmic desktopmonitor get screenheight /value') do set /a height=%%a
-for /f "tokens=2 delims=:." %%a in ('wmic desktopmonitor get screenwidth /value') do set /a width=%%a
-mode con cols=%width% lines=%height%
+:VBSDynamicBuild
+SET TempVBSFile=%temp%\~tmpSendKeysTemp.vbs
+IF EXIST "%TempVBSFile%" DEL /F /Q "%TempVBSFile%"
+ECHO Set WshShell = WScript.CreateObject("WScript.Shell") >>"%TempVBSFile%"
+ECHO Wscript.Sleep 1                                    >>"%TempVBSFile%"
+ECHO WshShell.SendKeys "{F11}"                            >>"%TempVBSFile%
+ECHO Wscript.Sleep 1                                    >>"%TempVBSFile%"
+
+CSCRIPT //nologo "%TempVBSFile%"
+
+:home
+cls
+pause
 call :isAdmin
 
  if %errorlevel% == 0 (
