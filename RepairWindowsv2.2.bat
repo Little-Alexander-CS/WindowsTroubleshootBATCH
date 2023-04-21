@@ -12,7 +12,6 @@ CSCRIPT //nologo "%TempVBSFile%"
 
 :home
 cls
-pause
 call :isAdmin
 
  if %errorlevel% == 0 (
