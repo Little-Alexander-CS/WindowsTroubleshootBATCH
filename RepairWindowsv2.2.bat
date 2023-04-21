@@ -338,13 +338,11 @@ if %process_count% GTR 0 (
     pause
     goto maintenance_menu
 )
-
  exit /b
 
  :UACPrompt
    echo Set UAC = CreateObject^("Shell.Application"^) > "%temp%\getadmin.vbs"
    echo UAC.ShellExecute "cmd.exe", "/c %~s0 %~1", "", "runas", 1 >> "%temp%\getadmin.vbs"
-
    "%temp%\getadmin.vbs"
    del "%temp%\getadmin.vbs"
   exit /B`
