@@ -352,6 +352,8 @@ if /i "%clear_cache%"=="Y" (
     echo Clearing ARP cache...
     cmd /c arp -d *
     echo ARP cache cleared.
+    pause
+    goto maintenance_menu
 ) else if /i "%clear_cache%"=="N" (
     echo Returning to maintenance menu...
     pause
@@ -359,7 +361,7 @@ if /i "%clear_cache%"=="Y" (
 ) else (
     echo Invalid input. Please enter either Y or N.
     pause
-    goto arp_cache
+    goto maintenance_menu
 )
 
  :UACPrompt
