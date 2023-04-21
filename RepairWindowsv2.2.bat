@@ -1,6 +1,8 @@
 @echo off
 title Windows 10/11 Troubleshooting Batch File (Alexander Little)
-mode 180, 60
+for /f "tokens=2 delims=:." %%a in ('wmic desktopmonitor get screenheight /value') do set /a height=%%a
+for /f "tokens=2 delims=:." %%a in ('wmic desktopmonitor get screenwidth /value') do set /a width=%%a
+mode con cols=%width% lines=%height%
 call :isAdmin
 
  if %errorlevel% == 0 (
