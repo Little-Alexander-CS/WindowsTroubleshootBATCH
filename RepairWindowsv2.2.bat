@@ -254,7 +254,7 @@ pause
 goto application_menu
 
 :dnsflush
-start cmd /k "ipconfig /flushdns && ipconfig /renew && ipconfig /displaydns > %USERPROFILE%\Downloads\displaydns.txt"
+start cmd /k "ipconfig /displaydns > %USERPROFILE%\Downloads\displaydns_before_flush.txt && ipconfig /flushdns && ipconfig /renew && ipconfig /displaydns > %USERPROFILE%\Downloads\displaydns_after_flush.txt"
 echo "Finished..."
 pause
 goto network_menu
