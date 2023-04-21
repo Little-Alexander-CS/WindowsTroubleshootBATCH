@@ -182,6 +182,7 @@ if /i %maint_choice% EQU 4 goto resourcemonitor
 if /i %maint_choice% EQU 5 goto windowsupdate
 if /i %maint_choice% EQU 6 goto createrestorepoint
 if /i %maint_choice% EQU 7 goto update
+if /i %maint_choice% EQU 8 goto arp_cache
 if /i %maint_choice% EQU B goto main_menu
 
 :restorebasic
@@ -339,6 +340,17 @@ if %process_count% GTR 0 (
     goto maintenance_menu
 )
  exit /b
+
+:arp_cache
+cls
+echo Displaying ARP cache...
+arp -a
+echo.
+echo Clearing ARP cache...
+arp -d *
+echo ARP cache cleared.
+pause
+goto maintenance_menu
 
  :UACPrompt
    echo Set UAC = CreateObject^("Shell.Application"^) > "%temp%\getadmin.vbs"
