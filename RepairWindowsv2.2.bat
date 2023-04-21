@@ -256,7 +256,7 @@ goto application_menu
 :dnsflush
 cmd /c "ipconfig /flushdns"
 cmd /c "ipconfig /renew"
-start cmd /k /c "ipconfig /displaydns"
+start cmd /k cmd /c "ipconfig /displaydns"
 echo "Finished..."
 pause
 goto network_menu
@@ -264,7 +264,7 @@ goto network_menu
 :pingip
 cmd /c "ping 127.0.0.1"
 cmd /c "ping 1.1.1.1"
-start cmd /k /c "ipconfig /all"
+start cmd /k cmd /c "ipconfig /all"
 pause
 goto network_menu
 
