@@ -162,6 +162,7 @@ echo     [4] Resource Monitor
 echo     [5] Check for Windows Updates
 echo     [6] Create a System Restore Point
 echo     [7] Winget Update Service
+echo     [8] Clear ARP Cache
 echo     [B] Back
 echo.
 
