@@ -166,7 +166,7 @@ echo     [8] Clear ARP Cache
 echo     [B] Back
 echo.
 
-set /p maint_choice="Enter your choice (1-7, B): "
+set /p maint_choice="Enter your choice (1-8, B): "
 
 :: Validate user input
 set "valid_choices=1 2 3 4 5 6 7 B"
