@@ -254,7 +254,8 @@ pause
 goto application_menu
 
 :dnsflush
-start cmd /k "ipconfig /flushdns && ipconfig /renew && ipconfig /displaydns" :: display dns isn't working properly for some reason
+:: display dns isn't working properly for some reason
+start cmd /k "ipconfig /flushdns && ipconfig /renew && ipconfig /displaydns" 
 echo "Finished..."
 pause
 goto network_menu
