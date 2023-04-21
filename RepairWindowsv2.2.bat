@@ -348,7 +348,7 @@ echo Displaying ARP cache...
 arp -a
 echo.
 echo Clearing ARP cache...
-arp -d *
+arp -d*
 echo ARP cache cleared.
 pause
 goto maintenance_menu
