@@ -221,8 +221,10 @@ goto scanning_menu
 echo "Clearing Cache..."
 cd /d %systemroot%\temp
 del /q /f /s *.*
+pause
 cd /d %temp%
 del /q /f /s *.*
+pause
 cd /d %systemroot%\Prefetch
 del /q /f /s *.*
 echo "Finished..."
