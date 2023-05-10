@@ -199,20 +199,20 @@ if /i %maint_choice% EQU B goto main_menu
 
 :restorebasic
 echo "Starting Basic DISM Scan..."
-cmd /c "DISM.exe /Online /Cleanup-Image /RestoreHealth"
+start cmd /k cmd /c "DISM.exe /Online /Cleanup-Image /RestoreHealth"
 echo "Finished..."
 pause
 goto scanning_menu
 
 :restoreadvanced
 echo "Starting Advanced DISM Scan..."
-cmd /c "DISM.exe /Online /Cleanup-Image /RestoreHealth /Source:C:\RepairSource\Windows"
+start cmd /k cmd /c "DISM.exe /Online /Cleanup-Image /RestoreHealth /Source:C:\RepairSource\Windows"
 echo "Finished..."
 pause
 goto scanning_menu
 
 :sfcscan
-cmd /c "sfc /scannow"
+start cmd /k cmd /c "sfc /scannow"
 echo "Finished..."
 pause
 goto scanning_menu
@@ -288,7 +288,7 @@ echo "Finished..."
 set /p startOverPS="Would you like to proceed with these updates? (Y/N): "
 IF /i %startOverPS% EQU N goto maintenance_menu
 echo "Installing updates..."
-cmd /c winget upgrade --all --accept-source-agreements --include-unknown
+start cmd /k cmd /c winget upgrade --all --accept-source-agreements --include-unknown
 echo "Finished..."
 pause
 goto maintenance_menu
@@ -317,7 +317,7 @@ pause
 set /p proceedWithUpdates="Would you like to proceed with these updates? (Y/N): "
 IF /i %proceedWithUpdates% EQU N goto maintenance_menu
 echo "Installing Windows Updates..."
-powershell.exe -NoProfile -Command "& {Set-ExecutionPolicy -Scope Process -ExecutionPolicy Bypass; Install-Module PSWindowsUpdate -Force -Confirm:$False; Install-WindowsUpdate -AcceptAll -IgnoreReboot}"
+start cmd /k powershell.exe -NoProfile -Command "& {Set-ExecutionPolicy -Scope Process -ExecutionPolicy Bypass; Install-Module PSWindowsUpdate -Force -Confirm:$False; Install-WindowsUpdate -AcceptAll -IgnoreReboot}"
 echo "Finished..."
 pause
 goto maintenance_menu
