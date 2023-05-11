@@ -199,21 +199,18 @@ if /i %maint_choice% EQU B goto main_menu
 
 :restorebasic
 echo "Starting Basic DISM Scan..."
-start cmd /k cmd /c "DISM.exe /Online /Cleanup-Image /RestoreHealth"
-echo "Finished..."
+start cmd.exe /k cmd /c "DISM.exe /Online /Cleanup-Image /RestoreHealth" & echo "Finished..."
 pause
 goto scanning_menu
 
 :restoreadvanced
 echo "Starting Advanced DISM Scan..."
-start cmd /k cmd /c "DISM.exe /Online /Cleanup-Image /RestoreHealth /Source:C:\RepairSource\Windows"
-echo "Finished..."
+start cmd.exe /k cmd /c "DISM.exe /Online /Cleanup-Image /RestoreHealth /Source:C:\RepairSource\Windows" & echo "Finished..."
 pause
 goto scanning_menu
 
 :sfcscan
-start cmd /k cmd /c "sfc /scannow"
-echo "Finished..."
+start cmd.exe /k cmd /c "sfc /scannow" & echo "Finished..."
 pause
 goto scanning_menu
 
@@ -269,8 +266,7 @@ pause
 goto application_menu
 
 :dnsflush
-start cmd /k "ipconfig /displaydns > %USERPROFILE%\Downloads\displaydns_before_flush.txt && ipconfig /flushdns && ipconfig /renew && ipconfig /displaydns > %USERPROFILE%\Downloads\displaydns_after_flush.txt"
-echo "Finished..."
+start cmd /k "ipconfig /displaydns > %USERPROFILE%\Downloads\displaydns_before_flush.txt && ipconfig /flushdns && ipconfig /renew && ipconfig /displaydns > %USERPROFILE%\Downloads\displaydns_after_flush.txt" & echo "Finished..."
 pause
 goto network_menu
 
@@ -288,8 +284,7 @@ echo "Finished..."
 set /p startOverPS="Would you like to proceed with these updates? (Y/N): "
 IF /i %startOverPS% EQU N goto maintenance_menu
 echo "Installing updates..."
-start cmd /k cmd /c winget upgrade --all --accept-source-agreements --include-unknown
-echo "Finished..."
+start cmd.exe /k cmd /c winget upgrade --all --accept-source-agreements --include-unknown & echo "Finished..."
 pause
 goto maintenance_menu
 
@@ -317,8 +312,7 @@ pause
 set /p proceedWithUpdates="Would you like to proceed with these updates? (Y/N): "
 IF /i %proceedWithUpdates% EQU N goto maintenance_menu
 echo "Installing Windows Updates..."
-start cmd /k powershell.exe -NoProfile -Command "& {Set-ExecutionPolicy -Scope Process -ExecutionPolicy Bypass; Install-Module PSWindowsUpdate -Force -Confirm:$False; Install-WindowsUpdate -AcceptAll -IgnoreReboot}"
-echo "Finished..."
+start cmd.exe /k powershell.exe -NoProfile -Command "& {Set-ExecutionPolicy -Scope Process -ExecutionPolicy Bypass; Install-Module PSWindowsUpdate -Force -Confirm:$False; Install-WindowsUpdate -AcceptAll -IgnoreReboot}" & echo "Finished..."
 pause
 goto maintenance_menu
 
