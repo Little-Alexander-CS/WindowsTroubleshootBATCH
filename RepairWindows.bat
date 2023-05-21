@@ -363,7 +363,7 @@ echo.
 set /p clear_cache=Do you want to clear the ARP cache? (Y/N): 
 if /i "%clear_cache%"=="Y" (
     echo Clearing ARP cache...
-    cmd /c arp -d *
+    cmd /c netsh interface IP delete arpcache
     echo ARP cache cleared.
     pause
     goto maintenance_menu
